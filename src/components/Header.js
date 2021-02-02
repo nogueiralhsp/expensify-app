@@ -1,28 +1,14 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+const Header = () => (
+    <header>
+        <h1 >Expensify</h1>
+        <ul>
+            <li><NavLink to="/" activeClassName="is-active" exact={true}>Home Page</NavLink></li>
+            <li><NavLink to="/create" activeClassName="is-active">Create Expense</NavLink></li>
+            <li><NavLink to="/help" activeClassName="is-active"> Expense Help!</NavLink></li>
+        </ul>
 
-// //*  Header using Stateless Function Component definition */
-const Header = (props) => (
-    <div className='header'>
-        <div className='container'>
-            <h1 className='header__title'>{props.title}</h1>
-            {props.subtitle && <h2 className='header__subtitle'>{props.subtitle}</h2>}
-        </div>
-    </div>
+    </header>
 )
-
-Header.defaultProps = {
-    title: 'Indecision'
-}
-// //*  Header using normal Class State Component definition */
-// class Header extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <h1>{this.props.title}</h1>
-//                 <h2>{this.props.subtitle}</h2>
-//             </div>
-//         )
-//     }
-// }
-
 export default Header

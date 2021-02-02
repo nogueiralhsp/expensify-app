@@ -1,5 +1,5 @@
 {
-  "name": "indecision-app",
+  "name": "boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Henrique Nogueira",
@@ -17,8 +17,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-modal": "^3.12.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
+    "uuid": "^8.3.2",
     "validator": "^13.5.2",
     "webpack-dev-server": "^3.11.2"
   },
@@ -29,15 +32,11 @@
     "build": "webpack",
     "dev-server": "webpack serve"
   },
-  "repository": "git+https://github.com/nogueiralhsp/indecision-app.git",
-  "bugs": {
-    "url": "https://github.com/nogueiralhsp/indecision-app/issues"
-  },
-  "homepage": "https://github.com/nogueiralhsp/indecision-app#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",
     "webpack": "^5.15.0",
