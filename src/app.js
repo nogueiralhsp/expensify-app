@@ -23,7 +23,11 @@ const expenseTwo = store.dispatch(addExpense({ description: 'gas bill', amount: 
 const expenseThree = store.dispatch(addExpense({ description: 'sandwich', amount: 100, createdAt: -2000 }))
 const expenseFour = store.dispatch(addExpense({ description: 'dessert', amount: 250, createdAt: 3000 }))
 
-// store.dispatch(setTextFilter('bill'))
+// store.dispatch(setTextFilter('bill')) 
+
+// setTimeout (() => {
+//     store.dispatch(setTextFilter('sand'))
+// }, 3000)
 
 // store.dispatch(sortByAmount())
 // store.dispatch(sortByDate())
