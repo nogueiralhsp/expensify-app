@@ -18,10 +18,10 @@ store.subscribe(() => {
 
 })
 
-const expenseOne = store.dispatch(addExpense({ description: 'water bill', amount: 500, createdAt: -21000 }))
-const expenseTwo = store.dispatch(addExpense({ description: 'gas bill', amount: 300, createdAt: -1000 }))
-const expenseThree = store.dispatch(addExpense({ description: 'sandwich', amount: 100, createdAt: -2000 }))
-const expenseFour = store.dispatch(addExpense({ description: 'dessert', amount: 250, createdAt: 3000 }))
+const expenseOne = store.dispatch(addExpense({ description: 'Water bill', amount: 500, createdAt: -21000 }))
+const expenseTwo = store.dispatch(addExpense({ description: 'Gas bill', amount: 300, createdAt: -1000 }))
+const expenseThree = store.dispatch(addExpense({ description: 'Sandwich', amount: 100, createdAt: -2000 }))
+const expenseFour = store.dispatch(addExpense({ description: 'Dessert', amount: 250, createdAt: 3000 }))
 
 // store.dispatch(setTextFilter('bill')) 
 
