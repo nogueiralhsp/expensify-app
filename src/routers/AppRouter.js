@@ -13,8 +13,8 @@ import NotFoundPage from '../components/NotFoundPage'
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div>
-            <Header class="header"/>
+        <div className="header">
+            <Header />
         </div>
         <Switch>
             <Route path="/" component={ExpenseDashboardPage} exact={true} />

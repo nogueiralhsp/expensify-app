@@ -6,6 +6,10 @@ module.exports = {
   entry: {
     app: './src/app.js',
   },
+  output: {
+    path: path.join(__dirname, 'public/'),
+    filename: 'bundle.js'
+  },
   plugins: [new MiniCssExtractPlugin({
     filename: 'styles.css',
   })],
@@ -21,8 +25,18 @@ module.exports = {
       test: /\.s?css$/,
       use: [
         MiniCssExtractPlugin.loader,
-        'css-loader',
-        'sass-loader'
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+          }
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+          }
+        },
       ]
     }]
   },
@@ -35,8 +49,5 @@ module.exports = {
       }),
     ],
   },
-  output: {
-    path: path.join(__dirname, 'public/'),
-    filename: 'bundle.js'
-  },
+
 };
